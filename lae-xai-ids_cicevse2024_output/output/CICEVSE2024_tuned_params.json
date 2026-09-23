@@ -1,0 +1,37 @@
+[
+  {
+    "model": "Decision Tree",
+    "cv_weighted_f1": 0.880428767283972,
+    "params": "{\"max_depth\": 27, \"min_samples_split\": 18, \"min_samples_leaf\": 1, \"criterion\": \"entropy\"}"
+  },
+  {
+    "model": "Random Forest",
+    "cv_weighted_f1": 0.6276061120644125,
+    "params": "{\"n_estimators\": 350, \"max_depth\": 30, \"min_samples_split\": 9, \"min_samples_leaf\": 1, \"max_features\": \"log2\"}"
+  },
+  {
+    "model": "XGBoost",
+    "cv_weighted_f1": 0.6768924914635711,
+    "params": "{\"n_estimators\": 250, \"learning_rate\": 0.09313030485400423, \"max_depth\": 9, \"min_child_weight\": 1, \"subsample\": 0.9817922011802638, \"colsample_bytree\": 0.8844557849230781, \"reg_lambda\": 0.012187989836538836}"
+  },
+  {
+    "model": "LightGBM",
+    "cv_weighted_f1": 0.6878586249679904,
+    "params": "{\"n_estimators\": 350, \"learning_rate\": 0.043978458139766655, \"num_leaves\": 80, \"max_depth\": -1, \"min_child_samples\": 13, \"subsample\": 0.9371437351939443, \"colsample_bytree\": 0.6852210003904133, \"reg_lambda\": 0.038122795815876055}"
+  },
+  {
+    "model": "CatBoost",
+    "cv_weighted_f1": 0.6555034920859119,
+    "params": "{\"iterations\": 200, \"learning_rate\": 0.296921676991058, \"depth\": 9, \"l2_leaf_reg\": 0.8746681211258788}"
+  },
+  {
+    "model": "SVM",
+    "cv_weighted_f1": 0.5173248000969918,
+    "params": "{\"C\": 0.1648044642797898, \"gamma\": 0.012561043700013555}"
+  },
+  {
+    "model": "Logistic Regression",
+    "cv_weighted_f1": 0.5209121012208516,
+    "params": "{\"C\": 10.256503696905552}"
+  }
+]

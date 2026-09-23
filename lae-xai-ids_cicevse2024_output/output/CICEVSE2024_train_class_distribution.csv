@@ -1,0 +1,13 @@
+class_index,class_name,n_train_full,n_train_sampled,n_test_eval,n_test_full_disjoint
+0,Aggressive scan,82018,1640,20501,20501
+1,ICMP flood or fragmentation,72,72,8,8
+2,Identity rotation and rotation flood,209748,4194,52436,52436
+3,Normal,65,65,17,17
+4,OS fingerprinting,112218,2244,28053,28053
+5,Port scanning,341327,6826,85313,85313
+6,Service detection,234285,4685,58561,58561
+7,Slow request starvation,3361,3361,840,840
+8,Stealth SYN scanning,424757,8495,106185,106185
+9,TCP floods,576835,11536,144209,144209
+10,UDP flood,25980,519,6495,6495
+11,Vulnerability scan,185094,3701,46270,46270

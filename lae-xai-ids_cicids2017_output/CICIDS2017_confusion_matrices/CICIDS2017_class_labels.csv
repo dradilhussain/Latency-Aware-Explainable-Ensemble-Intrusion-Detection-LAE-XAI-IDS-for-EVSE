@@ -1,0 +1,8 @@
+class_index,class_name
+0,BENIGN
+1,Bot
+2,Brute Force
+3,DoS/DDoS
+4,Infiltration
+5,PortScan
+6,Web Attack

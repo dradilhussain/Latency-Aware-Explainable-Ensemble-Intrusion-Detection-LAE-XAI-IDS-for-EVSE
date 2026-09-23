@@ -1,0 +1,13 @@
+True,Aggressive scan,ICMP flood or fragmentation,Identity rotation and rotation flood,Normal,OS fingerprinting,Port scanning,Service detection,Slow request starvation,Stealth SYN scanning,TCP floods,UDP flood,Vulnerability scan
+Aggressive scan,12109,9,0,0,1673,1803,1504,6,1614,0,0,1783
+ICMP flood or fragmentation,0,8,0,0,0,0,0,0,0,0,0,0
+Identity rotation and rotation flood,1,1,52424,0,1,0,0,0,0,9,0,0
+Normal,0,0,0,17,0,0,0,0,0,0,0,0
+OS fingerprinting,1263,15,0,1,16370,2799,2454,5,2326,0,0,2820
+Port scanning,7587,3,0,1,9115,32928,11996,182,13264,0,0,10237
+Service detection,4165,2,0,0,6588,6951,28145,3,6957,0,0,5750
+Slow request starvation,1,0,0,0,0,3,0,833,1,0,0,2
+Stealth SYN scanning,9930,4,0,0,10771,13280,13609,197,47298,0,0,11096
+TCP floods,1,26,3,1,0,0,0,2,0,144176,0,0
+UDP flood,0,4,0,0,0,2,2,0,0,0,6487,0
+Vulnerability scan,3319,4,0,0,4913,4085,4123,257,3909,0,0,25660

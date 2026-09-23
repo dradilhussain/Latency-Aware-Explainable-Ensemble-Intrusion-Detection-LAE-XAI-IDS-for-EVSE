@@ -1,0 +1,14 @@
+selected_features
+src2dst_bytes
+src_port
+src2dst_max_ps
+application_is_guessed
+src2dst_syn_packets
+bidirectional_min_piat_ms
+protocol
+bidirectional_stddev_piat_ms
+src2dst_duration_ms
+bidirectional_min_ps
+src2dst_min_piat_ms
+bidirectional_duration_ms
+dst2src_packets

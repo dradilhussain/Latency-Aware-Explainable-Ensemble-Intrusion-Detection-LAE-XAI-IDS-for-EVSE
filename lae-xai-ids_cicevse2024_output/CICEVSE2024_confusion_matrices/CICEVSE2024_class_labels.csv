@@ -1,0 +1,13 @@
+class_index,class_name
+0,Aggressive scan
+1,ICMP flood or fragmentation
+2,Identity rotation and rotation flood
+3,Normal
+4,OS fingerprinting
+5,Port scanning
+6,Service detection
+7,Slow request starvation
+8,Stealth SYN scanning
+9,TCP floods
+10,UDP flood
+11,Vulnerability scan

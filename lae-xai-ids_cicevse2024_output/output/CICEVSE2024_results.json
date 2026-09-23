@@ -1,0 +1,161 @@
+{
+  "models": {
+    "Decision Tree": {
+      "accuracy": 0.8926265467636385,
+      "precision": 0.9050932880752077,
+      "recall": 0.8926265467636385,
+      "weighted_f1": 0.8955065422974833,
+      "macro_f1": 0.8128162559980892,
+      "batch_latency_ms": 0.0002801356560555272,
+      "p99_latency_ms": 0.792203978053294,
+      "model_size_mb": 0.5666971206665039,
+      "train_time_s": 0.29024860000936314,
+      "n_features_used": 64
+    },
+    "Random Forest": {
+      "accuracy": 0.6158378394135051,
+      "precision": 0.6264816283195398,
+      "recall": 0.6158378394135051,
+      "weighted_f1": 0.6190089005134355,
+      "macro_f1": 0.5750149272074653,
+      "batch_latency_ms": 0.013766084337760026,
+      "p99_latency_ms": 57.57825802778824,
+      "model_size_mb": 337.46218490600586,
+      "train_time_s": 1.5248167000245303,
+      "n_features_used": 64
+    },
+    "XGBoost": {
+      "accuracy": 0.6614883181997055,
+      "precision": 0.681438576973662,
+      "recall": 0.6614883181997055,
+      "weighted_f1": 0.6633237297033239,
+      "macro_f1": 0.6356469419667371,
+      "batch_latency_ms": 0.0020912331841315313,
+      "p99_latency_ms": 4.905486982315779,
+      "model_size_mb": 12.672171592712402,
+      "train_time_s": 7.184541599999648,
+      "n_features_used": 64
+    },
+    "LightGBM": {
+      "accuracy": 0.6676316479864745,
+      "precision": 0.6901001660953556,
+      "recall": 0.6676316479864745,
+      "weighted_f1": 0.6701061464288978,
+      "macro_f1": 0.6325237541762516,
+      "batch_latency_ms": 0.013201461500335195,
+      "p99_latency_ms": 1.8126240064157173,
+      "model_size_mb": 21.325340270996094,
+      "train_time_s": 8.996781099995133,
+      "n_features_used": 64
+    },
+    "CatBoost": {
+      "accuracy": 0.6404184460217749,
+      "precision": 0.6710520342717273,
+      "recall": 0.6404184460217749,
+      "weighted_f1": 0.6424811366561524,
+      "macro_f1": 0.595869688448565,
+      "batch_latency_ms": 0.0005733078514485844,
+      "p99_latency_ms": 2.7957699837861583,
+      "model_size_mb": 10.19199275970459,
+      "train_time_s": 44.77066909999121,
+      "n_features_used": 64
+    },
+    "SVM": {
+      "accuracy": 0.4244035213012491,
+      "precision": 0.6297953570564484,
+      "recall": 0.4244035213012491,
+      "weighted_f1": 0.3880214068103901,
+      "macro_f1": 0.2984017965360216,
+      "batch_latency_ms": 0.9014524975951924,
+      "p99_latency_ms": 5.5811229965183875,
+      "model_size_mb": 8.071420669555664,
+      "train_time_s": 59.618239500036,
+      "n_features_used": 64
+    },
+    "Logistic Regression": {
+      "accuracy": 0.5170490154639926,
+      "precision": 0.5494379744028868,
+      "recall": 0.5170490154639926,
+      "weighted_f1": 0.509442565841999,
+      "macro_f1": 0.4314037723807731,
+      "batch_latency_ms": 0.0010408380216677623,
+      "p99_latency_ms": 1.7751010123174638,
+      "model_size_mb": 0.009988784790039062,
+      "train_time_s": 12.589812299993355,
+      "n_features_used": 64
+    },
+    "AutoML-Ensemble": {
+      "accuracy": 0.9030876973080119,
+      "precision": 0.908362124270049,
+      "recall": 0.9030876973080119,
+      "weighted_f1": 0.9041276266275536,
+      "macro_f1": 0.8266188275857226,
+      "batch_latency_ms": 0.023504207780035133,
+      "p99_latency_ms": 36.108574004028924,
+      "model_size_mb": 34.56803035736084,
+      "train_time_s": null,
+      "n_features_used": 64,
+      "ensemble_members": [
+        "Decision Tree",
+        "LightGBM",
+        "XGBoost"
+      ],
+      "ensemble_type": "Stacking",
+      "oof_f1": 0.8879361394453147
+    },
+    "LAE-XAI-IDS": {
+      "accuracy": 0.9080249522671292,
+      "precision": 0.9122520919784893,
+      "recall": 0.9080249522671292,
+      "weighted_f1": 0.908747756045033,
+      "macro_f1": 0.8231669337593092,
+      "batch_latency_ms": 0.024099531051940425,
+      "p99_latency_ms": 11.592483038548375,
+      "model_size_mb": 31.746305465698242,
+      "train_time_s": null,
+      "n_features_used": 13,
+      "ensemble_members": [
+        "Decision Tree",
+        "LightGBM",
+        "XGBoost"
+      ],
+      "ensemble_type": "Stacking",
+      "oof_f1": 0.8959040058667447
+    }
+  },
+  "diagnostics": {
+    "duplicate_overlap_pct": 0.00947670371085848,
+    "n_overlap_test_rows_removed": 52,
+    "depth3_probe_acc_raw": 0.6139742048311291,
+    "depth3_probe_acc_clean": 0.5337956012884232,
+    "leakage_flagged": false,
+    "suspect_features": [
+      "src_ip",
+      "src_mac",
+      "src_oui",
+      "dst_ip",
+      "dst_mac",
+      "dst_oui",
+      "bidirectional_first_seen_ms",
+      "bidirectional_last_seen_ms",
+      "src2dst_first_seen_ms",
+      "src2dst_last_seen_ms",
+      "dst2src_first_seen_ms",
+      "dst2src_last_seen_ms"
+    ],
+    "constant_or_duplicate_cols_dropped": [
+      "vlan_id",
+      "tunnel_id",
+      "dst2src_cwr_packets",
+      "dst2src_urg_packets",
+      "tunnel_id",
+      "bidirectional_ece_packets",
+      "src2dst_cwr_packets",
+      "src2dst_ece_packets",
+      "src2dst_urg_packets",
+      "dst2src_cwr_packets",
+      "dst2src_ece_packets",
+      "dst2src_urg_packets"
+    ]
+  }
+}
