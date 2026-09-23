@@ -1,0 +1,165 @@
+{
+  "models": {
+    "Decision Tree": {
+      "accuracy": 0.9792513668863031,
+      "precision": 0.9796270314182345,
+      "recall": 0.9792513668863031,
+      "weighted_f1": 0.9792001964791133,
+      "macro_f1": 0.9793048978234588,
+      "batch_latency_ms": 0.00046111033226099783,
+      "p99_latency_ms": 1.6069240000132368,
+      "model_size_mb": 0.1302652359008789,
+      "train_time_s": 1.410991899999999,
+      "n_features_used": 58
+    },
+    "Random Forest": {
+      "accuracy": 0.9819150427590074,
+      "precision": 0.9824188840635453,
+      "recall": 0.9819150427590074,
+      "weighted_f1": 0.9818553028073859,
+      "macro_f1": 0.9823605579968383,
+      "batch_latency_ms": 0.08405234824057352,
+      "p99_latency_ms": 71.7934539999726,
+      "model_size_mb": 46.24453639984131,
+      "train_time_s": 2.5935493000000065,
+      "n_features_used": 58
+    },
+    "XGBoost": {
+      "accuracy": 0.9823356231599607,
+      "precision": 0.9826909090193543,
+      "recall": 0.9823356231599607,
+      "weighted_f1": 0.9822690540669757,
+      "macro_f1": 0.9825613620998308,
+      "batch_latency_ms": 0.003689597644747078,
+      "p99_latency_ms": 5.846555999995644,
+      "model_size_mb": 5.1204118728637695,
+      "train_time_s": 9.978599199999962,
+      "n_features_used": 58
+    },
+    "LightGBM": {
+      "accuracy": 0.9833169774288518,
+      "precision": 0.9836212124116397,
+      "recall": 0.9833169774288518,
+      "weighted_f1": 0.983284548331694,
+      "macro_f1": 0.9743563863671071,
+      "batch_latency_ms": 0.01848422823496297,
+      "p99_latency_ms": 3.799332999844864,
+      "model_size_mb": 16.042967796325684,
+      "train_time_s": 12.06692239999984,
+      "n_features_used": 58
+    },
+    "CatBoost": {
+      "accuracy": 0.9837375578298051,
+      "precision": 0.9839546165191532,
+      "recall": 0.9837375578298051,
+      "weighted_f1": 0.9837100748390492,
+      "macro_f1": 0.9648957950228174,
+      "batch_latency_ms": 0.0010812561334788212,
+      "p99_latency_ms": 2.0819460003485784,
+      "model_size_mb": 6.285275459289551,
+      "train_time_s": 44.7970249,
+      "n_features_used": 58
+    },
+    "SVM": {
+      "accuracy": 0.9195289499509323,
+      "precision": 0.9208617370231832,
+      "recall": 0.9195289499509323,
+      "weighted_f1": 0.9144361574946442,
+      "macro_f1": 0.8384920168571958,
+      "batch_latency_ms": 0.36653009953736937,
+      "p99_latency_ms": 1.6395530002409942,
+      "model_size_mb": 3.1367273330688477,
+      "train_time_s": 34.20170449999932,
+      "n_features_used": 58
+    },
+    "Logistic Regression": {
+      "accuracy": 0.9369129398570026,
+      "precision": 0.9448473386999595,
+      "recall": 0.9369129398570026,
+      "weighted_f1": 0.9390689277614462,
+      "macro_f1": 0.8243282733888047,
+      "batch_latency_ms": 0.0006857563437204259,
+      "p99_latency_ms": 0.8706050007731392,
+      "model_size_mb": 0.006686210632324219,
+      "train_time_s": 13.081181900000047,
+      "n_features_used": 58
+    },
+    "AutoML-Ensemble": {
+      "accuracy": 0.9838777512967896,
+      "precision": 0.9841620559613077,
+      "recall": 0.9838777512967896,
+      "weighted_f1": 0.9838354758777781,
+      "macro_f1": 0.9749929943511122,
+      "batch_latency_ms": 0.016228809757527458,
+      "p99_latency_ms": 8.411794000176085,
+      "model_size_mb": 27.448726654052734,
+      "train_time_s": null,
+      "n_features_used": 58,
+      "ensemble_members": [
+        "CatBoost",
+        "LightGBM",
+        "XGBoost"
+      ],
+      "ensemble_type": "Voting-Uniform",
+      "oof_f1": 0.9597484846652821
+    },
+    "LAE-XAI-IDS": {
+      "accuracy": 0.9838777512967896,
+      "precision": 0.9841568502617349,
+      "recall": 0.9838777512967896,
+      "weighted_f1": 0.9838309108113656,
+      "macro_f1": 0.9753865691788703,
+      "batch_latency_ms": 0.01390471050041831,
+      "p99_latency_ms": 5.851791999602937,
+      "model_size_mb": 27.43485450744629,
+      "train_time_s": null,
+      "n_features_used": 35,
+      "ensemble_members": [
+        "CatBoost",
+        "LightGBM",
+        "XGBoost"
+      ],
+      "ensemble_type": "Voting-Uniform",
+      "oof_f1": 0.959656898765457
+    }
+  },
+  "diagnostics": {
+    "duplicate_overlap_pct": 0.889802302360548,
+    "n_overlap_test_rows_removed": 119172,
+    "depth3_probe_acc_raw": 0.9258251802970596,
+    "depth3_probe_acc_clean": 0.5209589233141736,
+    "leakage_flagged": false,
+    "suspect_features": [
+      "Init_Win_bytes_forward",
+      "Init_Win_bytes_backward",
+      "min_seg_size_forward"
+    ],
+    "constant_or_duplicate_cols_dropped": [
+      "Flow_Bytes_s",
+      "Flow_Packets_s",
+      "Bwd_PSH_Flags",
+      "Bwd_URG_Flags",
+      "Fwd_Avg_Bytes_Bulk",
+      "Fwd_Avg_Packets_Bulk",
+      "Fwd_Avg_Bulk_Rate",
+      "Bwd_Avg_Bytes_Bulk",
+      "Bwd_Avg_Packets_Bulk",
+      "Bwd_Avg_Bulk_Rate",
+      "Flow_Packets_s",
+      "Bwd_PSH_Flags",
+      "Bwd_URG_Flags",
+      "SYN_Flag_Count",
+      "CWE_Flag_Count",
+      "Avg_Fwd_Segment_Size",
+      "Fwd_Header_Length_1",
+      "Fwd_Avg_Bytes_Bulk",
+      "Fwd_Avg_Packets_Bulk",
+      "Fwd_Avg_Bulk_Rate",
+      "Bwd_Avg_Bytes_Bulk",
+      "Bwd_Avg_Packets_Bulk",
+      "Bwd_Avg_Bulk_Rate",
+      "Subflow_Fwd_Packets",
+      "Subflow_Bwd_Packets"
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+class_index,class_name,n_train_full,n_train_sampled,n_test_eval,n_test_full_disjoint
+0,BENIGN,1818477,36369,2000,378637
+1,Bot,1573,1573,246,246
+2,Brute Force,11068,221,1991,1991
+3,DoS/DDoS,304559,6091,2000,65207
+4,Infiltration,29,29,7,7
+5,PortScan,127144,2542,486,486
+6,Web Attack,1744,1744,403,403
